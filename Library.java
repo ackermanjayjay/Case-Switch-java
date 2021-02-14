@@ -5,7 +5,7 @@ public class TabelBuku {
         int JumlahBayar, denda, biaya,hargasewa;
       
         Scanner kode=new Scanner (System.in);
-        System.out.println("PERPUSTAKAAN HMIF BEM FTUMJ ");
+        System.out.println("PERPUSTAKAAN  ");
         System.out.println("------------------------------");
          System.out.println("Golongan Buku | | Nama Buku | | Harga Sewa Per 7 Hari | |");
           System.out.println("1             | |  SBP    | |              Rp.200,-  | |");
