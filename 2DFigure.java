@@ -7,7 +7,7 @@ public class two_dimentional_figure {
         tinggi,
         jarikuadrat,
         hasil;
-        
+
         Scanner kode=new Scanner (System.in);
         System.out.println("Calculator 2 two dimentional figure  ");
         System.out.println("------------------------------");
@@ -23,32 +23,64 @@ public class two_dimentional_figure {
         {
                 case "A":
                 System.out.println("Name : Square  " );
-                break;
+                    System.out.println("A             | | Circle area  | |   ");
+                 System.out.println("B             | |  Circumference   | |");
+                System.out.println("\nMencari = A?, B? (Harus dalam huruf kapital)");
+                 String hitung=kode.next();
+                 
+                 System.out.println("");
+                                
+                 switch (hitung){
+                     case "A":
+                     System.out.println("Masukkan Tinggi : ");
+                      tinggi=kode.nextInt();
+                      
+                     System.out.println("Masukkan Jari-jari : ");
+                    jari=kode.nextInt();
+                    
+                    System.out.println("");
+                    
+                    System.out.println(" Tinggi yang dimasukkan : "+tinggi );
+                    System.out.println(" Jari-Jari yang dimasukkan : "+jari );
+                     
+                      System.out.println("");
+                      
+                    jarikuadrat = jari*jari;
+                    
+                    double  luas = 3.14* jarikuadrat;
+                 
+                   System.out.println(" Hasil Area: "+luas );
+                 
+                 break;
+                 
+
+
+                 case "B":
+                       System.out.println("Masukkan Jari-jari : ");
+                       int jari1=kode.nextInt();
+                       
+                      double keliling = 3.14*2*jari1;
+                        System.out.println(" Hasil Circumference : "+keliling );
+        
+        }
+          break;
                 case "B":
                      System.out.println("Nama  : Rectangle " );
+                     System.out.println("Nama  : Rectangle " );
+                      System.out.println("A             | | Area of the Rectangle | |   ");
+                      System.out.println("B             | |  Perimeter of the Rectangle   | |");
+                      System.out.println("\nMencari = A?, B? (Harus dalam huruf kapital)");
+                      String persegi=kode.next();
+                      System.out.println("");
+                      switch (persegi){
+                          
+                      }
                      break;
                 case "C":
                     System.out.println("Nama  : Tube");
                      break;
         }
-        if(bangun =="A")
-        {
-            
-                 //System.out.println("Masukkan Jari-Jari : ");
-                // jari=kode.nextInt();
-                  
-                  System.out.println("Masukkan Tinggi : ");
-                  tinggi=kode.nextInt();
-                  
-                  System.out.println(" Tinggi yang dimasukkan : "+tinggi );
-                  
-                    System.out.println(" jari-jari yang dimasukkan : "+jari );
-                    
-                    jarikuadrat = jari*jari;
-                    
-                 double  volume = 3.14* jarikuadrat;
         }
+        
         //else if (bangun)
     }
-}
-// ONGOING
