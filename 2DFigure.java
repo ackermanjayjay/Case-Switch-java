@@ -66,7 +66,6 @@ public class two_dimentional_figure {
           break;
                 case "B":
                      System.out.println("Nama  : Rectangle " );
-                     System.out.println("Nama  : Rectangle " );
                       System.out.println("A             | | Area of the Rectangle | |   ");
                       System.out.println("B             | |  Perimeter of the Rectangle   | |");
                       System.out.println("\nMencari = A?, B? (Harus dalam huruf kapital)");
@@ -74,6 +73,34 @@ public class two_dimentional_figure {
                       System.out.println("");
                       switch (persegi){
                           
+                             case "A":
+                     System.out.println("Masukkan Panjang : ");
+                   int   panjang=kode.nextInt();
+                      
+                         System.out.println("Masukkan Lebar : ");
+                     int lebar=kode.nextInt();
+
+                        System.out.println("");
+
+
+                            double luas = panjang* lebar;
+                               System.out.println(" Hasil Area persegi panjaang : "+luas );
+                          
+                          break; 
+                            case "B":
+                     System.out.println("Masukkan Panjang : ");
+                   int   panjang1=kode.nextInt();
+                      
+                         System.out.println("Masukkan Lebar : ");
+                     int lebar1=kode.nextInt();
+
+                        System.out.println("");
+
+
+                            double keliling = 2* (panjang1 + lebar1);
+                               System.out.println(" Hasil Keliling persegi panjaang : "+keliling );
+                               
+                               break; 
                       }
                      break;
                 case "C":
