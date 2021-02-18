@@ -104,10 +104,50 @@ public class two_dimentional_figure {
                       }
                      break;
                 case "C":
-                    System.out.println("Nama  : Tube");
+                    System.out.println("Nama  : Cylinder");
+                    System.out.println("A             | | Volume of the Cylinder | |   ");
+                      System.out.println("B             | |  Surface area   | |");
+                      System.out.println("\nMencari = A?, B? (Harus dalam huruf kapital)");
+                      String tabung=kode.next();
+                      
+                         System.out.println("");
+                         switch(tabung)
+                         {
+                               case "A":
+                        System.out.println("Masukkan Tinggi : ");
+                            int   height=kode.nextInt();
+                      
+                         System.out.println("Masukkan Lebar : ");
+                            int radius=kode.nextInt();
+
+                                int radius2= radius*radius;
+
+                                System.out.println("");
+
+                            double Volume = 3.14* radius2*height;
+                               System.out.println(" Hasil Volume : "+Volume );
+                          
+                          break; 
+                          
+                           case "B":
+                        System.out.println("Masukkan jari-jari : ");
+                            int   jari_=kode.nextInt();
+                      
+                         System.out.println("Masukkan Tinggi : ");
+                            int tinggi_=kode.nextInt();
+
+                           
+
+                                System.out.println("");
+
+                            double area = 2*3.14* jari_*(jari_+tinggi_);
+                               System.out.println(" Hasil Luas Area : "+area );
+                               
+                               
+                               
+                         }
                      break;
-        }
-        }
+                    }
+                }
         
-        //else if (bangun)
-    }
+            }
